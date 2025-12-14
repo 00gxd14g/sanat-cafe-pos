@@ -1,0 +1,7 @@
+# Windows PowerShell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+# copy env example
+if (-not (Test-Path .env)) { Copy-Item .env.example .env }
+uvicorn app.main:app --host 127.0.0.1 --port 8000
