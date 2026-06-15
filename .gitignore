@@ -11,12 +11,23 @@ node_modules
 dist
 dist-ssr
 *.local
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
 backend/.env
 backend/*.db
 backend/prints/
 backend/keys/*.pem
 print_spool/
 pos.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+*.zip
+_ref_*/
 prints/
 
 # Editor directories and files
